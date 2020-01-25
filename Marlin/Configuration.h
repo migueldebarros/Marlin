@@ -642,17 +642,17 @@
   #define DELTA_DIAGONAL_ROD 218.0        // (mm)
 
   // Distance between bed and nozzle Z home position
-  #define DELTA_HEIGHT 272.43             // (mm) Get this value from G33 auto calibrate
+  #define DELTA_HEIGHT 271.54             // (mm) Get this value from G33 auto calibrate
 
-  #define DELTA_ENDSTOP_ADJ { 0.0, -0.66, -2.80 } // Get these values from G33 auto calibrate
+  #define DELTA_ENDSTOP_ADJ { 0.0, -0.65, -3.65 } // Get these values from G33 auto calibrate
 
   // Horizontal distance bridged by diagonal push rods when effector is centered.
-  #define DELTA_RADIUS 98.40              // (mm) Get this value from G33 auto calibrate
+  #define DELTA_RADIUS 98.67              // (mm) Get this value from G33 auto calibrate
 
   // Trim adjustments for individual towers
   // tower angle corrections for X and Y tower / rotate XYZ so Z tower angle = 0
   // measured in degrees anticlockwise looking from above the printer
-  #define DELTA_TOWER_ANGLE_TRIM { 0.02, 0.93, -0.95 } // Get these values from G33 auto calibrate
+  #define DELTA_TOWER_ANGLE_TRIM { 0.36, 0.89, -1.26 } // Get these values from G33 auto calibrate
 
   // Delta radius and diagonal rod adjustments (mm)
   //#define DELTA_RADIUS_TRIM_TOWER { 0.0, 0.0, 0.0 }
@@ -1033,7 +1033,7 @@
  *
  * Specify a Probe position as { X, Y, Z }
  */
-#define NOZZLE_TO_PROBE_OFFSET { 30, 20, -3.35 }
+#define NOZZLE_TO_PROBE_OFFSET { 30, 20, -3.77 }
 
 // Certain types of probes need to stay away from edges
 #define MIN_PROBE_EDGE 0
@@ -1045,7 +1045,7 @@
 #define Z_PROBE_SPEED_FAST HOMING_FEEDRATE_Z
 
 // Feedrate (mm/m) for the "accurate" probe of each point
-#define Z_PROBE_SPEED_SLOW (Z_PROBE_SPEED_FAST / 16)
+#define Z_PROBE_SPEED_SLOW (Z_PROBE_SPEED_FAST / 32)
 
 /**
  * Multiple Probing
@@ -1056,7 +1056,7 @@
  * A total of 2 does fast/slow probes with a weighted average.
  * A total of 3 or more adds more slow probes, taking the average.
  */
-#define MULTIPLE_PROBING 3
+//#define MULTIPLE_PROBING 3
 //#define EXTRA_PROBING    1
 
 /**
@@ -1312,7 +1312,7 @@
   #if ENABLED(G26_MESH_VALIDATION)
     #define MESH_TEST_NOZZLE_SIZE    0.4  // (mm) Diameter of primary nozzle.
     #define MESH_TEST_LAYER_HEIGHT   0.2  // (mm) Default layer height for the G26 Mesh Validation Tool.
-    #define MESH_TEST_HOTEND_TEMP  200    // (°C) Default nozzle temperature for the G26 Mesh Validation Tool.
+    #define MESH_TEST_HOTEND_TEMP  180    // (°C) Default nozzle temperature for the G26 Mesh Validation Tool.
     #define MESH_TEST_BED_TEMP      60    // (°C) Default bed temperature for the G26 Mesh Validation Tool.
     #define G26_XY_FEEDRATE         20    // (mm/s) Feedrate for XY Moves for the G26 Mesh Validation Tool.
   #endif

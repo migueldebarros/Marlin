@@ -640,7 +640,7 @@
   #define DELTA_PRINTABLE_RADIUS 80.0     // (mm)
 
   // Center-to-center distance of the holes in the diagonal push rods.
-  #define DELTA_DIAGONAL_ROD 218.0        // (mm)
+  #define DELTA_DIAGONAL_ROD 217.7        // (mm)
 
   // Distance between bed and nozzle Z home position
   #define DELTA_HEIGHT 274.13             // (mm) Get this value from G33 auto calibrate

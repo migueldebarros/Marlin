@@ -75,8 +75,8 @@
   #define RAMPS_D8_PIN         TG_HEATER_BED_PIN
 #else
   // EFF
-  #define RAMPS_D9_PIN               TG_FAN1_PIN
-  #define RAMPS_D8_PIN               TG_FAN0_PIN
+  #define RAMPS_D9_PIN               TG_FAN0_PIN
+  #define RAMPS_D8_PIN               TG_FAN1_PIN
 #endif
 
 #if HOTENDS > 1 || TEMP_SENSOR_BED                // EEF, EEB, EFB

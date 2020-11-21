@@ -646,20 +646,20 @@
   #define DELTA_PRINTABLE_RADIUS 80.0     // (mm)
 
   // Center-to-center distance of the holes in the diagonal push rods.
-  #define DELTA_DIAGONAL_ROD 217.7        // (mm)
+  #define DELTA_DIAGONAL_ROD 218        // (mm)
 
   // Distance between bed and nozzle Z home position
-  #define DELTA_HEIGHT 268.02             // (mm) Get this value from G33 auto calibrate
+  #define DELTA_HEIGHT 265.12             // (mm) Get this value from G33 auto calibrate
 
-  #define DELTA_ENDSTOP_ADJ { 0.0, -0.26, -1.54 } // Get these values from G33 auto calibrate
+  #define DELTA_ENDSTOP_ADJ { -0.01, 0.00, -1.20 } // Get these values from G33 auto calibrate
 
   // Horizontal distance bridged by diagonal push rods when effector is centered.
-  #define DELTA_RADIUS 97.98              // (mm) Get this value from G33 auto calibrate
+  #define DELTA_RADIUS 98.05              // (mm) Get this value from G33 auto calibrate
 
   // Trim adjustments for individual towers
   // tower angle corrections for X and Y tower / rotate XYZ so Z tower angle = 0
   // measured in degrees anticlockwise looking from above the printer
-  #define DELTA_TOWER_ANGLE_TRIM { -0.84, 0.58, 0.26 } // Get these values from G33 auto calibrate
+  #define DELTA_TOWER_ANGLE_TRIM { -1.12, 1.12, 0.00 } // Get these values from G33 auto calibrate
 
   // Delta radius and diagonal rod adjustments (mm)
   //#define DELTA_RADIUS_TRIM_TOWER { 0.0, 0.0, 0.0 }
@@ -1057,7 +1057,8 @@
 
 // Feedrate (mm/m) for the "accurate" probe of each point
 //#define Z_PROBE_SPEED_SLOW (Z_PROBE_SPEED_FAST / 32)
-#define Z_PROBE_SPEED_SLOW Z_PROBE_SPEED_FAST
+//#define Z_PROBE_SPEED_SLOW Z_PROBE_SPEED_FAST
+#define Z_PROBE_SPEED_SLOW 400
 
 /**
  * Multiple Probing
